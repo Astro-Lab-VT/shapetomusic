@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Container to create a grid layout */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+            grid-template-rows: repeat(6, auto); /* 6 rows */
+            gap: 40px; /* Reduced gap between images */
+            justify-content: center; /* Center grid horizontally */
+            padding: 20px; /* Padding around the grid */
+            margin: 0 auto; /* Center grid on the page */
+            max-width: 90%; /* Max width for responsiveness */
+        }
+
+        /* Style for the images */
+        .image-grid figure {
+            text-align: center; /* Center the text below the image */
+            margin: 0; /* Remove margin between figures */
+        }
+
+        .image-grid img {
+            width: 100%; /* Use full available width in the grid */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Indicate clickability */
+            border: 5px solid #E5751F; /* Frame with color #E5751F */
+        }
+
+        .image-grid figcaption {
+            margin-top: 5px; /* Space between image and title */
+            font-size: 12px; /* Font size for title */
+            color: white; /* Title color */
+        }
+
+	.image-grid figtitle {
+            margin-top: 5px; /* Space between image and title */
+            font-size: 18px; /* Font size for title */
+            color: white; /* Title color */
+        }
+        /* Styling for the page */
+        body {
+            background-color: #861f41;
+            color: white;
+            font-family: Times New Roman, serif;
+            font-size: 18pt;
+	    margin: 50px; /* Center grid on the page */
+
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Banner Example</title>
+    <style>
+        /* Banner styling */
+        .banner {
+            width: 100%; /* Full width of the page */
+            height: 40%; /* Maintain the image aspect ratio */
+            display: block; /* Removes any spacing below the image */
+        }
+
+	 .overlay-text {
+            position: absolute; /* Positioned relative to the banner container */
+            top: 30%; /* Move down 50% of the container */
+            left: 50%; /* Move right 50% of the container */
+            transform: translate(-50%, -50%); /* Center text perfectly */
+            text-align: center;
+            font-size: 36px; /* Adjust font size */
+            color: #ffffff; /* White text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for contrast */
+            z-index: 10; /* Ensures text is on top */
+        }
+    </style>
+</head>
+	
+<body>
+<img src="sheet_mus_2.png" alt="Website Banner" class="banner">
+
+<div class="overlay-text">
+	<h1>Shape To Music</h1>
+	<h2>Image-Based Approach by Sofia Cassara</h2>
+</div>
+
+<p>The Image-Based approach creates music by dividing the image into sub-images, then calculating the ratio of black pixels to total pixels (termed “density”) for each sub-image. As the density increases, the notes get deeper; a density of 0 will be the highest note possible (C7) while a density of 100 will be the lowest note possible (C3). Different sub-image sizes yield different songs.</p>
+<p> There are two kinds of topological images on this page. Cellular metamaterials, denoted 'CMM', feature a periodic pattern across the image. The other spinodoids, denoted 'Image', feature non-periodic patterns generated through research. The material of both is a Titanium-Aluminum alloy.</p>
+<p> Listen to a song by selecting an image, then selecting a sub-image size!</p>
+
+<div class="image-grid">
+    <!-- 30 images -->
+    <figure>
+	<figtitle><b> CMM 1</b></figtitle>
+        <img src="CMM_new_scaled_1.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 2</b></figtitle>
+        <img src="CMM_new_scaled_2.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 3 </b></figtitle>
+        <img src="CMM_new_scaled_3.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 4 </b></figtitle>
+        <img src="CMM_new_scaled_4.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 5 </b></figtitle>
+        <img src="CMM_new_scaled_5.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 0</b></figtitle>
+        <img src="image_0.png" onclick="new Audio('image_1_200.wav').play()">
+    </figure>
+	
+    <figure>
+	<figtitle><b> Image 1</b></figtitle>
+        <img src="image_1.png" onclick="new Audio('image_1_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 2</b></figtitle>
+        <img src="image_2.png" onclick="new Audio('image_2_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 3</b></figtitle>
+        <img src="image_3.png" onclick="new Audio('image_3_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 4</b></figtitle>
+        <img src="image_4.png" onclick="new Audio('image_4_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 5</b></figtitle>
+        <img src="image_5.png" onclick="new Audio('image_5_200.wav').play()">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 6</b></figtitle>
+        <img src="image_6.png" onclick="new Audio('image_6_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 7</b></figtitle>
+        <img src="image_7.png" onclick="new Audio('image_7_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 8</b></figtitle>
+        <img src="image_8.png" onclick="new Audio('image_8_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 9</b></figtitle>
+        <img src="image_9.png" onclick="new Audio('image_9_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 10</b></figtitle>
+        <img src="image_10.png" onclick="new Audio('image_10_200.wav').play()">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 11</b></figtitle>
+        <img src="image_11.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 12</b></figtitle>
+        <img src="image_12.png" onclick="new Audio('image_1_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 13</b></figtitle>
+        <img src="image_13.png" onclick="new Audio('image_2_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 14</b></figtitle>
+        <img src="image_14.png" onclick="new Audio('image_3_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 15</b></figtitle>
+        <img src="image_15.png" onclick="new Audio('image_4_200.wav').play()">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 16</b></figtitle>
+        <img src="image_16.png" onclick="new Audio('image_5_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 17</b></figtitle>
+        <img src="image_17.png" onclick="new Audio('image_6_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 18</b></figtitle>
+        <img src="image_18.png" onclick="new Audio('image_7_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 19</b></figtitle>
+        <img src="image_19.png" onclick="new Audio('image_8_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 20</b></figtitle>
+        <img src="image_20.png" onclick="new Audio('image_9_200.wav').play()">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 21</b></figtitle>
+        <img src="image_21.png" onclick="new Audio('image_10_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 22</b></figtitle>
+        <img src="image_22.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 23</b></figtitle>
+        <img src="image_23.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+    <figure>
+	<figtitle><b> Image 24</b></figtitle>
+        <img src="image_24.png" onclick="new Audio('image_11_200.wav').play()">
+    </figure>
+</div>
+
+</body>
+</html>

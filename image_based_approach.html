@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* creating grid layout */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 images in each row */
+            grid-template-rows: repeat(6, auto); /* 6 rows */
+            gap: 40px; 
+            justify-content: center; 
+            padding: 20px; 
+            margin: 0 auto; 
+            max-width: 90%; 
+        }
+
+        /* styling all images */
+        .image-grid figure {
+            text-align: center; 
+            margin: 0; 
+        }
+
+        .image-grid img {
+            width: 100%; 
+            height: auto;
+            cursor: pointer; /* image can be clicked */
+            border: 5px solid #E5751F; 
+        }
+
+	/* settings for image titles */
+	.image-grid figtitle {
+            margin-top: 5px; 
+            font-size: 18px; 
+            color: white; 
+        }
+        
+        body {
+            background-color: #861f41;
+            color: white;
+            font-family: Times New Roman, serif;
+            font-size: 18pt;
+	    margin: 0px; 
+
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Note Banner</title>
+    <style>
+        /* Banner styling */
+        .banner {
+            width: 100%; 
+            height: 40%; 
+            display: block; 
+        }
+
+	 .overlay-text {
+            position: absolute; 
+            top: 30%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            font-size: 36px; 
+            color: #ffffff; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            z-index: 10; 
+        }
+    </style>
+</head>
+	
+<body>
+<img src="assets/images/sheet_mus_2.png" alt="Website Banner" class="banner">
+
+<div class="overlay-text">
+	<h1>Shape To Music</h1>
+	<h2>Image-Based Approach by Sofia Cassara</h2>
+</div>
+
+<p>The Image-Based approach creates music by dividing the image into sub-images, then calculating the ratio of black pixels to total pixels (termed "density") for each sub-image. As the density increases, the notes get deeper; a density of 0 will be the highest note possible (C7) while a density of 100 will be the lowest note possible (C3). Different sub-image sizes yield different songs.</p>
+<p> There are two kinds of topological images on this page. Cellular metamaterials, denoted 'CMM', feature a periodic pattern across the image. The other spinodoids, denoted 'Image', feature non-periodic patterns generated through research. The material of both is a Titanium-Aluminum alloy.</p>
+<p> Listen to a song by selecting an image, then selecting a sub-image size!</p>
+
+<div class="image-grid">
+    <!-- 30 images -->
+    <figure>
+	<figtitle><b> CMM 1</b></figtitle>
+        <img src="assets/images/CMM_new_scaled_1.png" onclick="window.location.href='cmm_1.html';">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 2</b></figtitle>
+        <img src="assets/images/CMM_new_scaled_2.png" onclick="window.location.href='cmm_2.html';">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 3 </b></figtitle>
+        <img src="assets/images/CMM_new_scaled_3.png" onclick="window.location.href='cmm_3.html';">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 4 </b></figtitle>
+        <img src="assets/images/cmm_new_scaled_4.png" onclick="window.location.href='cmm_4.html';">
+    </figure>
+    <figure>
+	<figtitle><b> CMM 5 </b></figtitle>
+        <img src="assets/images/cmm_new_scaled_5.png" onclick="window.location.href='cmm_5.html';">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 0</b></figtitle>
+        <img src="assets/images/image_0.png" onclick="window.location.href='image_0.html';">
+    </figure>
+	
+    <figure>
+	<figtitle><b> Image 1</b></figtitle>
+        <img src="assets/images/image_1.png" onclick="window.location.href='image_1.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 2</b></figtitle>
+        <img src="assets/images/image_2.png" onclick="window.location.href='image_2.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 3</b></figtitle>
+        <img src="assets/images/image_3.png" onclick="window.location.href='image_3.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 4</b></figtitle>
+        <img src="assets/images/image_4.png" onclick="window.location.href='image_4.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 5</b></figtitle>
+        <img src="assets/images/image_5.png" onclick="window.location.href='image_5.html';">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 6</b></figtitle>
+        <img src="assets/images/image_6.png" onclick="window.location.href='image_6.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 7</b></figtitle>
+        <img src="assets/images/image_7.png" onclick="window.location.href='image_7.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 8</b></figtitle>
+        <img src="assets/images/image_8.png" onclick="window.location.href='image_8.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 9</b></figtitle>
+        <img src="assets/images/image_9.png" onclick="window.location.href='image_9.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 10</b></figtitle>
+        <img src="assets/images/image_10.png" onclick="window.location.href='image_10.html';">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 11</b></figtitle>
+        <img src="assets/images/image_11.png" onclick="window.location.href='image_11.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 12</b></figtitle>
+        <img src="assets/images/image_12.png" onclick="window.location.href='image_12.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 13</b></figtitle>
+        <img src="assets/images/image_13.png" onclick="window.location.href='image_13.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 14</b></figtitle>
+        <img src="assets/images/image_14.png" onclick="window.location.href='image_14.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 15</b></figtitle>
+        <img src="assets/images/image_15.png" onclick="window.location.href='image_15.html';">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 16</b></figtitle>
+        <img src="assets/images/image_16.png" onclick="window.location.href='image_16.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 17</b></figtitle>
+        <img src="assets/images/image_17.png" onclick="window.location.href='image_17.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 18</b></figtitle>
+        <img src="assets/images/image_18.png" onclick="window.location.href='image_18.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 19</b></figtitle>
+        <img src="assets/images/image_19.png" onclick="window.location.href='image_19.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 20</b></figtitle>
+        <img src="assets/images/image_20.png" onclick="window.location.href='image_20.html';">
+    </figure>
+
+    <figure>
+	<figtitle><b> Image 21</b></figtitle>
+        <img src="assets/images/image_21.png" onclick="window.location.href='image_21.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 22</b></figtitle>
+        <img src="assets/images/image_22.png" onclick="window.location.href='image_22.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 23</b></figtitle>
+        <img src="assets/images/image_23.png" onclick="window.location.href='image_23.html';">
+    </figure>
+    <figure>
+	<figtitle><b> Image 24</b></figtitle>
+        <img src="assets/images/image_24.png" onclick="window.location.href='image_24.html';">
+    </figure>
+</div>
+
+</body>
+</html>
