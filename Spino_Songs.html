@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape To Music</title>
+    <style>
+        body {
+            background-color: #861f41;
+            color: white;
+            font-family: "Times New Roman";
+            text-align: center;
+            font-size: 18pt;
+            margin: 50px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        button {
+            font-size: 16pt;
+            margin: 5px;
+            padding: 5px 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ffffff;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        .image-container {
+            width: 250px; /* Consistent width */
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Smooth corners */
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shape To Music</h1>
+    <h2>Spinodoid Topologies Converted to Sound Using FEA</h2>
+    <h3>By Buminhan K. Sansa</h3>
+
+    <p style="color: green;">Click on an image to hear what it sounds like!</p>
+
+    <div class="gallery">
+        <!-- Generate 25 image and audio pairs dynamically -->
+        <!-- You only need to update filenames for new images/audio -->
+        <script>
+            const totalImages = 25; // Change if adding more images
+            const container = document.querySelector('.gallery');
+            let currentAudio = null;
+
+            for (let i = 1; i <= totalImages; i++) {
+                let div = document.createElement('div');
+                div.classList.add('image-container');
+
+                div.innerHTML = `
+                    <img src="assets_b/images_b/image_${i}_input.png" alt="Spinodoid Image ${i}" onclick="playAudio('assets_b/songs_b/spinodoid_song_image_${i}.wav')">
+                    <br>
+                    <div class="audio-controls">
+                        <button onclick="playAudio('assets_b/songs_b/spinodoid_song_image_${i}.wav')">▶️</button>
+                        <button onclick="stopAudio()">⏸️</button>
+                    </div>
+                `;
+                
+                container.appendChild(div);
+            }
+
+            function playAudio(audioFile) {
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = new Audio(audioFile);
+                currentAudio.play();
+            }
+
+            function stopAudio() {
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+            }
+        </script>
+    </div>
+<!-- Back button to return to index.html -->
+<button class="back-button" onclick="window.location.href='index.html'">⬅️ Back</button>
+</body>
+</html>
